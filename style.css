@@ -118,6 +118,42 @@ footer { border-top: 1px solid var(--border); padding: 40px 28px; text-align: ce
 footer .small { color: var(--text-3); font-family: var(--mono); font-size: 12px; margin-top: 8px; }
 footer .dot { display: inline-block; margin-right: 8px; }
 
+/* ---------- Profil ---------- */
+.profile-head { display: flex; gap: 20px; align-items: center; }
+.avatar {
+  flex: 0 0 auto;
+  width: 84px; height: 84px; border-radius: 50%;
+  display: grid; place-items: center;
+  font-family: var(--serif); font-size: 42px; font-weight: 600; color: #fff;
+  background: linear-gradient(135deg, var(--accent), #7c6cf0);
+  border: 3px solid var(--surface);
+  box-shadow: 0 10px 24px rgba(67, 56, 202, 0.28);
+}
+.profile-head h1 { font-family: var(--serif); font-size: clamp(40px, 6vw, 64px); font-weight: 600; line-height: 1.05; margin: 0; }
+.role { margin: 6px 0 0; font-size: 16px; color: var(--text-2); }
+.profile-head .code-label { margin-bottom: 6px; }
+
+/* ---------- Visi Misi ---------- */
+.vm-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 20px; margin-top: 32px; }
+.vm-card { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; padding: 26px; box-shadow: 0 2px 10px rgba(31,29,26,.05); transition: transform .25s, box-shadow .25s; }
+.vm-card:hover { transform: translateY(-4px); box-shadow: 0 16px 32px rgba(31,29,26,.12); }
+.vm-num { font-family: var(--mono); font-size: 13px; color: var(--accent); margin: 0 0 10px; }
+.vm-card h3 { font-family: var(--serif); font-size: 24px; font-weight: 600; margin: 0 0 10px; }
+.vm-card p { margin: 0; font-size: 15px; line-height: 1.65; color: var(--text-2); }
+.vm-card ul { margin: 0; padding-left: 20px; font-size: 15px; line-height: 1.65; color: var(--text-2); }
+.vm-card li { margin-bottom: 6px; }
+
+/* ---------- Prinsip ---------- */
+.prinsip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 16px; margin-top: 32px; }
+.prinsip-card { border-left: 4px solid var(--accent); background: var(--surface); border-top: 1px solid var(--border); border-right: 1px solid var(--border); border-bottom: 1px solid var(--border); border-radius: 0 16px 16px 0; padding: 20px 22px; }
+.prinsip-card h3 { font-family: var(--serif); font-size: 20px; font-weight: 600; margin: 0 0 8px; }
+.prinsip-card p { margin: 0; font-size: 14px; line-height: 1.6; color: var(--text-2); }
+
+/* ---------- Chips keahlian ---------- */
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+.chips span { padding: 8px 16px; border-radius: 9999px; border: 1px solid var(--border-strong); background: var(--surface); font-family: var(--mono); font-size: 13px; color: var(--text-2); transition: transform .2s, border-color .2s, color .2s; }
+.chips span:hover { transform: translateY(-2px); border-color: var(--accent); color: var(--accent); }
+
 /* ---------- Reveal animation ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
 .reveal.in { opacity: 1; transform: none; }
@@ -139,6 +175,7 @@ footer .dot { display: inline-block; margin-right: 8px; }
   .hero-img.one, .hero-img.two { right: auto; left: auto; bottom: auto; top: auto; }
   .blob { display: none; }
   .tentang-grid { grid-template-columns: 1fr; }
+  .profile-head { flex-direction: column; align-items: flex-start; }
   .stats { gap: 20px; flex-wrap: wrap; }
   .nav { padding: 12px 16px; }
   .section { padding: 48px 16px; }

@@ -3,36 +3,45 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>nyawit-dev — Beranda</title>
-  <meta name="description" content="nyawit-dev — proyek open-source: #CuekinBuzzer, Poster Fakta, dan lainnya. Diam bukan berarti buta. Cuek bukan berarti setuju." />
+  <title>nyawit-dev — Portofolio</title>
+  <meta name="description" content="Portofolio nyawit-dev: pengembang open-source Indonesia. Tujuan, visi-misi, prinsip, keahlian, dan karya — #CuekinBuzzer, Poster Fakta, dan lainnya." />
   <link rel="icon" href="favicon.svg" />
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=5" />
 </head>
 <body>
   <header class="nav">
     <a class="brand" href="./"><span class="dot"></span>nyawit-dev</a>
     <nav>
-      <a href="#proyek">Proyek</a>
-      <a href="#tentang">Tentang</a>
+      <a href="#profil">Profil</a>
+      <a href="#visi">Visi &amp; Misi</a>
+      <a href="#prinsip">Prinsip</a>
+      <a href="#karya">Karya</a>
       <a class="nav-cta" href="https://github.com/nyawit-dev" target="_blank" rel="noreferrer">GitHub ↗</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
+    <!-- ===== PROFIL ===== -->
+    <section id="profil" class="hero">
       <div class="hero-text reveal">
-        <p class="code-label">Open source · Indonesia · Est. 2026</p>
-        <h1>Diam bukan berarti buta.<br />Cuek bukan berarti setuju.</h1>
-        <p class="lede">Halaman utama <strong>nyawit-dev</strong> — kumpulan proyek web satir, edukasi, dan tools seputar #CuekinBuzzer: melawan buzzer, hoaks, dan pengalihan isu dengan fakta.</p>
+        <div class="profile-head">
+          <div class="avatar" aria-hidden="true">N</div>
+          <div>
+            <p class="code-label">Profil · Open Source · Indonesia</p>
+            <h1>nyawit-dev</h1>
+            <p class="role">Pengembang open-source — web satir, edukasi, dan tools untuk Indonesia.</p>
+          </div>
+        </div>
+        <p class="lede">Akun ini berdiri sebagai ruang khusus rilis aplikasi & proyek open-source — terpisah dari akun pribadi, terbuka untuk siapa saja membaca, memakai, dan berkontribusi. Fokusnya sederhana: <strong>fakta di atas keributan</strong>, dan teknologi yang bisa dipakai orang banyak tanpa ribet.</p>
         <div class="cta">
-          <a class="btn btn-primary" href="#proyek">Lihat Proyek Live ↓</a>
+          <a class="btn btn-primary" href="#karya">Lihat Karya ↓</a>
           <a class="btn btn-secondary" href="https://github.com/nyawit-dev" target="_blank" rel="noreferrer">Profil GitHub ↗</a>
         </div>
         <div class="stats">
           <div><strong>2</strong><span>proyek live</span></div>
-          <div><strong>8</strong><span>repo publik</span></div>
-          <div><strong>100%</strong><span>static & open</span></div>
+          <div><strong>8+</strong><span>repo publik</span></div>
+          <div><strong>MIT</strong><span>semua lisensi</span></div>
         </div>
       </div>
 
@@ -58,8 +67,70 @@
       </div>
     </section>
 
-    <section id="proyek" class="section">
-      <p class="code-label reveal">Repositories</p>
+    <!-- ===== TUJUAN & VISI MISI ===== -->
+    <section id="visi" class="section">
+      <p class="code-label reveal">Tujuan · Visi · Misi</p>
+      <h2 class="reveal">Kenapa akun ini berdiri</h2>
+      <div class="vm-grid">
+        <article class="vm-card reveal">
+          <p class="vm-num">01</p>
+          <h3>Tujuan Berdiri</h3>
+          <p>Menjadi rumah resmi proyek open-source: tempat merilis aplikasi, situs, dan eksperimen yang bisa dipakai siapa saja. Akun ini dipisah dari akun pribadi supaya semua karya tercatat rapi, berlisensi terbuka, dan mudah ditemukan.</p>
+        </article>
+        <article class="vm-card reveal">
+          <p class="vm-num">02</p>
+          <h3>Visi</h3>
+          <p>Teknologi untuk rakyat, bukan untuk keributan — ruang digital Indonesia yang lebih sehat, di mana fakta lebih keras suaranya daripada buzzer, dan karya kecil yang selesai lebih dihargai daripada wacana besar yang tidak jadi.</p>
+        </article>
+        <article class="vm-card reveal">
+          <p class="vm-num">03</p>
+          <h3>Misi</h3>
+          <ul>
+            <li>Membangun situs & tools edukasi berbasis fakta (#CuekinBuzzer, Poster Fakta).</li>
+            <li>Menerbitkan semua karya dengan lisensi terbuka (MIT).</li>
+            <li>Mengirim lewat GitHub Pages + Actions — murah, cepat, tanpa server ribet.</li>
+            <li>Mengajak orang lain berkontribusi: koreksi, ide, dan pull request terbuka.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== PRINSIP ===== -->
+    <section id="prinsip" class="section">
+      <p class="code-label reveal">Prinsip Kerja</p>
+      <h2 class="reveal">Cara saya membangun</h2>
+      <div class="prinsip-grid">
+        <article class="prinsip-card reveal">
+          <h3>Fakta di atas keributan</h3>
+          <p>Setiap klaim wajib punya sumber. Satir boleh tajam, tapi tidak boleh fitnah.</p>
+        </article>
+        <article class="prinsip-card reveal">
+          <h3>Terbuka itu default</h3>
+          <p>Kode, lisensi, dan proses rilis terbuka. Tidak ada yang disembunyikan kecuali token & kredensial.</p>
+        </article>
+        <article class="prinsip-card reveal">
+          <h3>Kecil tapi selesai</h3>
+          <p>Lebih baik satu situs live yang rapi daripada sepuluh rencana yang tidak jadi. Rilis dulu, perbaiki sambil jalan.</p>
+        </article>
+        <article class="prinsip-card reveal">
+          <h3>Bahasa rakyat</h3>
+          <p>Tulisan dan antarmuka memakai bahasa Indonesia yang lugas — teknologi bukan untuk segelintir orang.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== KEAHLIAN ===== -->
+    <section class="section">
+      <p class="code-label reveal">Fokus & Keahlian</p>
+      <h2 class="reveal">Teknologi yang dipakai</h2>
+      <div class="chips reveal">
+        <span>SvelteKit</span><span>TailwindCSS</span><span>TypeScript</span><span>Kotlin / Ktor</span><span>PostgreSQL</span><span>Python</span><span>GitHub Actions</span><span>GitHub Pages</span><span>Docker</span><span>Satire & Konten Edukasi</span>
+      </div>
+    </section>
+
+    <!-- ===== KARYA ===== -->
+    <section id="karya" class="section">
+      <p class="code-label reveal">Karya Terpilih</p>
       <h2 class="reveal">Proyek</h2>
       <p class="sub reveal">Daftar ini dimuat otomatis dari GitHub API — repo dengan situs live ditandai hijau.</p>
       <div id="grid" class="grid">
@@ -73,13 +144,16 @@
       </noscript>
     </section>
 
+    <!-- ===== TENTANG / KONTAK ===== -->
     <section id="tentang" class="section tentang">
       <div class="tentang-grid">
         <div class="reveal">
-          <p class="code-label">About</p>
-          <h2>Tentang</h2>
-          <p><strong>nyawit-dev</strong> adalah akun open-source untuk rilis aplikasi dan proyek web. Fokus saat ini: edukasi digital #CuekinBuzzer — strategi kolektif warga Indonesia berhenti memberi engagement ke buzzer dan mengalihkannya ke konten kepentingan publik berbasis fakta (terinspirasi Janonisme dari Brasil, disuarakan Windah Basudara, 5 November 2026).</p>
-          <p>Situs ini statis, tanpa tracking, MIT License. Koreksi dan kontribusi dibuka lewat GitHub.</p>
+          <p class="code-label">Kontak</p>
+          <h2>Mari terhubung</h2>
+          <p>Semua karya ada di GitHub — baca kodenya, pakai situsnya, atau kirim koreksi lewat Issue & Pull Request. Untuk diskusi tentang #CuekinBuzzer dan proyek lainnya, pintu GitHub selalu terbuka.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="https://github.com/nyawit-dev" target="_blank" rel="noreferrer">github.com/nyawit-dev ↗</a>
+          </div>
         </div>
         <figure class="tentang-img reveal">
           <img src="assets/tentang.jpg" alt="Perbukitan berkabut" loading="lazy" />
@@ -94,6 +168,6 @@
     <p class="small">Static site · GitHub Pages · MIT</p>
   </footer>
 
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
