@@ -6,27 +6,50 @@
   <title>nyawit-dev — Beranda</title>
   <meta name="description" content="nyawit-dev — proyek open-source: #CuekinBuzzer, Poster Fakta, dan lainnya. Diam bukan berarti buta. Cuek bukan berarti setuju." />
   <link rel="icon" href="favicon.svg" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="nav">
-    <a class="brand" href="./"><span class="red">#</span>nyawit<span class="green">-dev</span></a>
+    <a class="brand" href="./"><span class="dot"></span>nyawit-dev</a>
     <nav>
       <a href="#proyek">Proyek</a>
       <a href="#tentang">Tentang</a>
-      <a href="https://github.com/nyawit-dev" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <a class="nav-cta" href="https://github.com/nyawit-dev" target="_blank" rel="noreferrer">GitHub ↗</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <p class="pill">OPEN SOURCE · INDONESIA</p>
-      <h1>Diam bukan<br /><span class="outline">berarti buta.</span><br /><span class="red">Cuek bukan berarti setuju.</span></h1>
-      <p class="lede">Halaman utama <strong>nyawit-dev</strong> — kumpulan proyek web satir, edukasi, dan tools seputar #CuekinBuzzer: melawan buzzer, hoaks, dan pengalihan isu dengan fakta.</p>
-      <div class="cta">
-        <a class="btn btn-red" href="#proyek">Lihat Proyek Live ↓</a>
-        <a class="btn btn-paper" href="https://github.com/nyawit-dev" target="_blank" rel="noreferrer">Profil GitHub ↗</a>
+      <div class="hero-text reveal">
+        <p class="code-label">OPEN SOURCE · INDONESIA · EST. 2026</p>
+        <h1>Diam bukan berarti buta.<br />Cuek bukan berarti setuju.</h1>
+        <p class="lede">Halaman utama <strong>nyawit-dev</strong> — kumpulan proyek web satir, edukasi, dan tools seputar #CuekinBuzzer: melawan buzzer, hoaks, dan pengalihan isu dengan fakta.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#proyek">Lihat Proyek Live ↓</a>
+          <a class="btn btn-secondary" href="https://github.com/nyawit-dev" target="_blank" rel="noreferrer">Profil GitHub ↗</a>
+        </div>
+        <div class="stats">
+          <div><strong data-count="2">2</strong><span>proyek live</span></div>
+          <div><strong data-count="8">8</strong><span>repo publik</span></div>
+          <div><strong data-count="100">100%</strong><span>static & open</span></div>
+        </div>
       </div>
+
+      <div class="hero-media reveal">
+        <figure class="hero-img main">
+          <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=1200&auto=format&fit=crop" alt="Kerumunan orang bergerak bersama" />
+          <figcaption>#CuekinBuzzer — bergerak bersama, tanpa ribut</figcaption>
+        </figure>
+        <figure class="hero-img small one">
+          <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop" alt="Hutan hijau" loading="lazy" />
+        </figure>
+        <figure class="hero-img small two">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop" alt="Kode di layar" loading="lazy" />
+        </figure>
+        <div class="glow" aria-hidden="true"></div>
+      </div>
+
       <div class="marquee" aria-hidden="true">
         <div class="marquee-track">
           <span>JANGAN KOMEN ✕ JANGAN SHARE ✕ JANGAN DEBAT ✕ SCROLL LEWAT ✓ DUKUNG FAKTA ✓ #CUEKINBUZZER ✕&nbsp;&nbsp;</span>
@@ -36,8 +59,9 @@
     </section>
 
     <section id="proyek" class="section">
-      <h2>Proyek Live</h2>
-      <p class="sub">Daftar ini dimuat otomatis dari GitHub API — repo dengan situs live ditandai hijau.</p>
+      <p class="code-label reveal">REPOSITORIES</p>
+      <h2 class="reveal">Proyek</h2>
+      <p class="sub reveal">Daftar ini dimuat otomatis dari GitHub API — repo dengan situs live ditandai hijau.</p>
       <div id="grid" class="grid">
         <p class="loading">Memuat proyek dari GitHub…</p>
       </div>
@@ -50,15 +74,24 @@
     </section>
 
     <section id="tentang" class="section tentang">
-      <h2>Tentang</h2>
-      <p><strong>nyawit-dev</strong> adalah akun open-source untuk rilis aplikasi dan proyek web. Fokus saat ini: edukasi digital #CuekinBuzzer — strategi kolektif warga Indonesia berhenti memberi engagement ke buzzer dan mengalihkannya ke konten kepentingan publik berbasis fakta (terinspirasi Janonisme dari Brasil, disuarakan Windah Basudara, 5 November 2026).</p>
-      <p>Situs ini statis, tanpa tracking, MIT License. Koreksi dan kontribusi dibuka lewat GitHub.</p>
+      <div class="tentang-grid">
+        <div class="reveal">
+          <p class="code-label">ABOUT</p>
+          <h2>Tentang</h2>
+          <p><strong>nyawit-dev</strong> adalah akun open-source untuk rilis aplikasi dan proyek web. Fokus saat ini: edukasi digital #CuekinBuzzer — strategi kolektif warga Indonesia berhenti memberi engagement ke buzzer dan mengalihkannya ke konten kepentingan publik berbasis fakta (terinspirasi Janonisme dari Brasil, disuarakan Windah Basudara, 5 November 2026).</p>
+          <p>Situs ini statis, tanpa tracking, MIT License. Koreksi dan kontribusi dibuka lewat GitHub.</p>
+        </div>
+        <figure class="tentang-img reveal">
+          <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1000&auto=format&fit=crop" alt="Perbukitan berkabut" loading="lazy" />
+          <figcaption>Fakta di lapangan tidak bisa di-scroll lewat.</figcaption>
+        </figure>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p><span class="red">#</span><strong>nyawit-dev</strong> · Diam bukan berarti buta.</p>
-    <p class="small">SvelteKit / static site · GitHub Pages · MIT</p>
+    <p><span class="dot"></span><strong>nyawit-dev</strong> · Diam bukan berarti buta.</p>
+    <p class="small">Static site · GitHub Pages · MIT</p>
   </footer>
 
   <script src="app.js"></script>
