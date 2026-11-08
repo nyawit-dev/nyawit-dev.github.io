@@ -17,7 +17,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--sans); overflow-x: hidden; }
 ::selection { background: var(--green); color: #0f0f0f; }
 a { color: inherit; }
 img { display: block; max-width: 100%; }
@@ -91,7 +91,7 @@ img { display: block; max-width: 100%; }
 .section h2 { font-size: 36px; font-weight: 400; line-height: 1.25; margin: 0 0 10px; }
 .sub { color: var(--text-3); margin-top: 0; }
 
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; margin-top: 32px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 18px; margin-top: 32px; }
 .card { display: flex; flex-direction: column; background: var(--bg); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; text-decoration: none; transition: transform .25s, border-color .25s; }
 .card:hover { transform: translateY(-5px); border-color: var(--border-accent); }
 .card .thumb { height: 160px; overflow: hidden; border-bottom: 1px solid var(--border); background: var(--surface); }
@@ -131,9 +131,16 @@ footer .dot { display: inline-block; margin-right: 8px; }
 }
 
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; padding-top: 56px; }
-  .hero-media { min-height: 340px; }
-  .hero-img.main { height: 340px; }
+  .hero { grid-template-columns: 1fr; padding-top: 48px; gap: 32px; }
+  .hero h1 { font-size: clamp(34px, 11vw, 52px); }
+  .hero-media { min-height: 0; display: flex; flex-direction: column; gap: 12px; }
+  .hero-img.main { height: 260px; animation: none; }
+  .hero-img.small { position: static; width: 100%; height: 120px; animation: none; }
+  .hero-img.one, .hero-img.two { right: auto; left: auto; bottom: auto; top: auto; }
+  .glow { display: none; }
   .tentang-grid { grid-template-columns: 1fr; }
-  .stats { gap: 24px; }
+  .stats { gap: 20px; flex-wrap: wrap; }
+  .nav { padding: 12px 16px; }
+  .section { padding: 48px 16px; }
+  .hero { padding-left: 16px; padding-right: 16px; }
 }

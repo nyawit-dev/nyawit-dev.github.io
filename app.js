@@ -4,23 +4,21 @@ const LIVE = {
   'cuekin-bazer': {
     url: 'https://nyawit-dev.github.io/cuekin-bazer/',
     label: '#CuekinBuzzer',
-    img: 'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?q=80&w=800&auto=format&fit=crop',
+    img: 'assets/card-cuekin.jpg',
     blurb: 'Gerakan & panduan melawan buzzer, hoaks, dan pengalihan isu. SvelteKit + Tailwind, satir & fakta terverifikasi.'
   },
   'poster-fakta': {
     url: 'https://nyawit-dev.github.io/poster-fakta/',
     label: 'Poster Fakta',
-    img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?q=80&w=800&auto=format&fit=crop',
+    img: 'assets/card-poster.jpg',
     blurb: 'Generator poster fakta 1080×1080 siap share — 10 tema, 3 layout, 3 ukuran, tanpa server.'
   }
 };
 
 const GENERIC_IMGS = [
-  'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop',
-  'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=800&auto=format&fit=crop'
+  'assets/card-g1.jpg',
+  'assets/card-g2.jpg',
+  'assets/card-g3.jpg'
 ];
 
 const FALLBACK = [
